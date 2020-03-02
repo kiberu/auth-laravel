@@ -9,7 +9,7 @@ use Laravel\Passport\HasApiTokens;
 use App\Notifications\PasswordResetNotification;
 use Illuminate\Support\Facades\Lang;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, Notifiable;
 
